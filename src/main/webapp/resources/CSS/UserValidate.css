@@ -1,0 +1,354 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, p, ul, li, a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f4f4f4;
+	color: #333;
+	width:100vw;
+	height:100vh;
+}
+
+.content-wrapper {
+	width: 99.5%;
+	height: 99.7%;
+	padding-top:1px;
+	margin:auto;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+	box-shadow: 0px 0px 5px 2px grey;
+	background-color:rgb(201, 204, 213);
+	height:40px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.logo {
+	width: 100px;
+	height: 80px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+h1 {
+	 font-family: "Pacifico", cursive;
+	font-size: 38px;
+  color: transparent; 
+  background-image: url("../img/backgroung.jpg"); 
+  background-size: cover; 
+  background-clip: text;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+  -webkit-background-clip: text; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	gap: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color:black;
+	font-size: 16px;
+	padding: 5px 0;
+	position: relative;
+	transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-image: linear-gradient(#0f0c29,#302b63,#24243e);
+	bottom: 0;
+	left: 0;
+	transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+nav ul li a:hover {
+	color:black;
+}
+/*-------------------------------------------------------------------*/
+
+.main-parent-frm-side {
+    width: 100%;
+    height: 81%;
+    display: flex;  
+    align-items: center;  
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 1px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../img/store1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-parent-frm-side::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.4);  */
+   /*  filter: blur(8px);  */
+    z-index: 0; 
+}
+
+.login-form-div, .form-container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+    width: 35%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 3px grey;
+    padding:10px;
+    z-index: 1;
+    margin: auto;
+}
+
+.heading {
+    font-size: 1.5rem;
+    text-align:center;
+    margin-bottom: 1rem;
+     font-weight: 600;
+}
+
+.span-lgn {
+	margin-left:10px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.lgn-ipt1, .lgn-ipt2, .lgn-ipt3, .form-div input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 95%;
+}
+
+.lgn-ipt3, .submit-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.lgn-ipt3:hover, .submit-btn:hover {  
+    transform: scale(1.05);
+}
+
+.forgot-password-container {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.dontacount {
+	margin:15px;
+    text-align: center;
+}
+
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    width: 95%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom:10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover{  
+    transform: scale(1.05);
+}
+
+.form-container h2{
+	text-align:center;
+}
+
+footer {
+	box-shadow: 0px 0px 5px 2px grey;
+	background-color:rgb(201, 204, 213);
+	padding: 20px;
+	text-align: center;
+	color:black;
+	margin-top: 1px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+footer p {
+	font-size: 14px;
+}
+
+
+
+@media (max-width: 500px) {
+
+	*{
+	   margin:0;
+       padding:0;
+       box-sizing:border-box; 
+	}
+     body{
+       width:100vw;
+       height:100vh;
+     }
+     .content-wrapper{
+        padding: 0 0px;
+     }
+     header {
+        flex-direction: row;
+        height: auto;
+        padding: 0px;
+        text-align: center;
+    }
+
+    header .logo {
+        height: 80px;
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin: 5px 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0px;
+        border-radius: 5px;
+    }
+    
+    .main-parent-frm-side {
+    background: url("../img/store1.avif") no-repeat center center;
+    background-size: cover; 
+    background-attachment: fixed;
+    width: 100%;
+    height: 85%;
+}
+
+
+    .main-parent-frm-side {
+       
+        backdrop-filter: blur(10px);
+    }
+
+    .login-form-div, .form-container {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        width: 90%;
+    }
+
+    .login-form-div p.heading,
+    .form-container h2 {
+        font-size: 20px;
+    }
+
+    .lgn-ipt1, .lgn-ipt2, .form-div input,
+    .lgn-ipt3, .submit-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .lgn-ipt3, .submit-btn {
+        background: #4A90E2;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .lgn-ipt3:hover, .submit-btn:hover {
+        background: #357ABD;
+        transform: scale(1.05);
+    }
+
+   
+    footer {
+        font-size: 14px;
+        padding: 15px;
+        width:100%;
+        height:auto;
+        margin-top:1%;
+    }
+}

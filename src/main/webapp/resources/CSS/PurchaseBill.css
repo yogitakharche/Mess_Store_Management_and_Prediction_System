@@ -1,0 +1,133 @@
+@charset "UTF-8";
+body{
+	width:100vw;
+	height:100vh;
+}
+/* General form container */
+.add-invoice {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px lightgrey;
+    width: 99%;
+    margin: 10px auto;
+}
+h1{
+   margin-bottom: 30px;
+   text-align:center;	
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.select-class, .input-class {
+    width: 35%;
+}
+
+/* Labels aligned above inputs */
+label {
+    display: block;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+/* Input and select field styling */
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+    border-color: rgb(104, 109, 118);
+    outline: none;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color:rgb(104, 109, 118);
+    color: white;
+}
+td{
+	height:20px;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color:rgb(104, 109, 118);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    width:30%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color:rgb(55, 58, 64);
+}
+
+
+
+
+@media (max-width: 500px) {
+	
+	.form-row {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    }
+    
+   .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    }
+
+    .select-class, .input-class {
+    width: 100%;
+    }
+
+    .select-class select,
+    .select-class input,
+    .input-class input {
+    width: 97%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+    
+}
+
+
+
+
+
+
+
+

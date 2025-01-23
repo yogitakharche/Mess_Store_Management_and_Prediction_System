@@ -1,0 +1,243 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-wrapper-container{
+	width: 100%;
+    height: 100%;
+    
+}
+.user-container{
+	display:flex;	
+	width: 98%;
+    height: 87%; 
+    margin-top:1%;
+    margin-left:1%;
+    padding:1%;
+    gap:2%;   
+    border-radius:9px;
+    box-shadow: 0px 0px 5px 3px #ddd;
+    background-color:white; 
+    border:0.5px solid #ddd;
+   
+}
+
+.h3-text{
+	width: 100%;
+    height: 5%; 
+    padding-top:0.5%;
+    padding-left:2%;
+	font-size:1.3em;
+	position: sticky;
+    top: 0px;
+    background-color:#e9e9e9;
+    border-bottom-right-radius:100% ;
+    
+   box-shadow: 0px 0px 5px 5px lightblue;
+}
+.add-user-form{
+	width: 30%;
+    height: 79%;
+    padding-top:1%;
+    border:0.5px solid #ddd;
+    box-shadow: 0px 0px 5px 3px #ddd;
+    border-right:none; 
+}
+.add-user-form span{
+	margin-left:3%;
+	font-size:0.8em;
+}
+.add-user-form h1{
+	text-align:center;
+	font-size:1em;
+	margin-bottom:4%;
+}
+.ipt{
+    width: 96%;
+    height: 28px;
+    font-size: 0.9em;    
+    border:0.5px solid black;
+    border-radius:3px;
+    outline: none;
+    background-color:#f2f2f2;
+    padding-left: 4px;
+    margin-left: 2%;
+    margin-bottom:1%;
+}
+.submit-btnn{
+	width: 96%;
+    height: 30px;
+    font-size: 0.8em;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    padding-left: 2px;
+    margin-left: 2%;
+    margin-top:5%;
+	background-color:lightslategray;	 
+}
+.massage{
+	margin:5px;
+	font-size: 0.6em;
+}
+.add-user-form {
+  animation: fadeInUp 2s ease-out;
+  animation-delay: 2s; 
+  animation-iteration-count: 1; 
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.add-user-form {
+  animation: fadeInUp 1s ease-out;
+}
+
+
+/*-------------VIEW USER--------------------*/
+
+
+.view-user-table{
+    width: 70%;
+    height: 100%;
+    border:0.5px solid black;
+    border-left:none;
+    padding-top:1%;
+    overflow-y:auto;
+    scrollbar-width: thin;      
+}
+.view-user-table h1{
+	text-align:center;
+	font-size:1em;
+	margin-bottom:1%;
+}
+.search{
+	margin-left:50%;
+	height:22px;
+	width:47%;
+	border-radius:5px;
+	 outline: none;
+	font-size:1.2em;
+	margin-bottom:1%;
+	 padding-left:10px;
+	 font-size:0.8em;
+	 border:0.5px solid black;
+}
+.view-user-table table{
+	width: 100%;
+    height: 99%;
+   
+}
+
+.view-user-table tr{
+	text-align:center;	
+}
+.view-user-table th{
+	font-size:0.8em;
+	height: 20px;
+	background-color:lightgrey;
+
+}
+.view-user-table td{
+	font-size:0.8em;
+	height: 20px;	
+}
+td:hover {
+	background-color: #ebebeb;
+	}
+.view-user-table {
+  animation: fadeInUp 2s ease-out;
+  animation-delay: 2s; 
+  animation-iteration-count: 1; 
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.view-user-table {
+  animation: fadeInUp 1s ease-out;
+}
+
+/*----------------UPDATE-USER-----------------*/
+
+.update-form{
+	width:25%;
+	height:40%;
+	margin-left:70%;
+	margin-top:7%;
+	padding-top:1%;
+	border-radius:5px;
+	box-shadow: 0px 0px 5px 3px lightblue;
+	border-top:20px solid black;
+	border:0.5px solid black;
+}
+.update-form h1{
+	font-size:1em;
+	text-align:center;
+}
+.update-form input{
+	width:96%;
+	height:25px;
+	padding-left:10px;
+	margin-bottom:2%;
+	margin-left:2%;
+	 background-color:#f2f2f2;
+	border-radius:3px;
+	border:0.5px solid black;
+	outline:none;
+}
+.update-form button{
+	width:96%;
+	height:25px;
+	margin-bottom:4%;
+	margin-top:4%;
+	margin-left:2%;
+	border-radius:3px;
+	background-color:lightslategray;
+}
+.update-form span{
+	margin-left:2%;
+	font-size:0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

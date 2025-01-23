@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	width: 100vw;
+	height: 100vh;
+}
+
+#MessStoreDataTable_wrapper {
+	/* font-size: 0.7em; */
+	
+	
+}
+#MessStoreDataTable {
+	font-size: 0.7em;
+	border-radius:15px;
+}
+
+#specificSection * {
+	font-size: 0.7em;
+}
+
+#MessStoreDataTable_length lable {
+	font-size: 0.7em;
+}
+
+#MessStoreDataTable_info {
+	font-size: 0.7em;
+}
+
+#MessStoreDataTable_filter {
+	font-size: 0.7em;
+}
+
+#MessStoreDataTable_paginate {
+	font-size: 0.7em;
+}
+
+.dataTables_length {
+	font-size: 0.7em;
+}
+
+/* .dataTables_length select {
+	height: 20px;
+	width: 10px;
+	margin-left: 20px;
+} */
+
+.wrapper-frm-container {
+	width:100%;
+	height:100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.h3-text{
+	width: 100%;
+    height: 6%; 
+    padding-top:0.5%;
+    padding-left:2.5%;
+	font-size:1.3em;
+	position: sticky;
+    top: 0px;
+    background-color:#e9e9e9;
+    border-bottom-right-radius:100% ;
+   box-shadow: 0px 0px 5px 5px lightblue;
+}
+h1{
+	font-size:1.3em;
+    text-align: center;
+}
+.form-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+select:focus,
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Table Styles */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-table th,
+.product-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: lightgrey;
+    color: black;
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.delete-link {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.delete-link:hover {
+    text-decoration: underline;
+}
+
+
+.discount-container {
+    display: flex;
+    gap: 10px;
+}
+
+.discount-container > div {
+    flex: 1;
+}
+
+.discount-container label {
+    margin-bottom: 5px;
+}
+
+
+.total-price {
+    margin-top: 5px;
+}
+
+
+.submit-button {
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: grey;
+    color:white;
+}

@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* .vendor-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+} */
+
+.h3-text {
+    text-align: center;
+    color: #333;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.add-vendor-form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease;
+}
+
+.add-vendor-form h1 {
+    text-align: center;
+    color: #555;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.ipt {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.ipt:focus {
+    border-color: #007bff;
+}
+
+.submit-btnn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btnn:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: popUpFade 0.5s ease;
+}
+
+@keyframes popUpFade {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.popup.show {
+    display: block;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+	
+	.add-vendor-form {
+    width: 98%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease;
+    }
+}

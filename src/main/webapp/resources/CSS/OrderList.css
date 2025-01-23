@@ -1,0 +1,318 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper-frm-container {
+   width: 100%;
+}
+.form-container{
+	 width: 95%;
+    background-color: #fff;
+    padding: 20px;
+    margin:auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.h3-text{
+	width: 100%;
+    height: 10%; 
+    padding-top:0.5%;
+    padding-left:2.5%;
+	font-size:1.3em;
+	position: sticky;
+    top: 0px;
+    background-color:white;
+  /*  box-shadow: 0px 0px 5px 5px grey; */
+}
+
+.form-container h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group select, 
+.form-group input[type="text"],
+.form-group .submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Products Table */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeInTable 1.2s ease-in-out;
+}
+
+@keyframes fadeInTable {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-table th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.product-table td {
+	text-align: center;
+	 border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+	}
+.product-table th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.product-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.product-table input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.product-table input[type="text"],
+.product-table select {
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-table input[type="text"]:focus,
+.product-table select:focus {
+    border-color:black;
+    box-shadow: 0 0 8px grey;
+    outline: none;
+}
+
+/* Submit Button CSS */
+.submit-button {
+    background-color: lightgrey; 
+    border: none; 
+    color: black; 
+    padding: 9px 100px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+
+.submit-button:hover {
+    background-color: grey;
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 15px whitesmoke; 
+}
+
+
+.submit-button:active {
+    transform: scale(0.95); 
+    box-shadow: none; 
+}
+
+
+
+@media (max-width: 768px) {
+    .wrapper-frm-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-container h1 {
+        font-size: 20px;
+    }
+
+    .product-table th, .product-table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container h1 {
+        font-size: 18px;
+    }
+
+    .product-table th, .product-table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .submit-button {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 500px) {
+ 
+  .wrapper-frm-container {
+   width: 100%;
+   margin:0%;
+   padding:0%;
+   }
+  .form-container{
+	width: 100%;
+    background-color: #fff;
+    margin:0%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+    }
+    
+    .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeInTable 1.2s ease-in-out;
+    }
+
+    th {
+    text-align: center; 
+    padding: 10px;
+    border-bottom: 2px solid #ccc; 
+}
+
+th:nth-child(1) {
+    width: 10%; 
+}
+
+th:nth-child(2) {
+    width: 5%; 
+}
+
+th:nth-child(3) {
+    width: 40%; 
+}
+
+th:nth-child(4) {
+    width: 20%; 
+}
+
+th:nth-child(5) {
+    width: 20%; 
+}
+
+.submit-button {
+    background-color: lightgrey; 
+    border: none; 
+    color: black; 
+    padding: 9px 100px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

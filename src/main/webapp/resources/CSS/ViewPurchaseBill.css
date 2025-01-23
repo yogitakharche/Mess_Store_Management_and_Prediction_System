@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+ body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .invoice-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .invoice-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .invoice-header h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+            font-weight: lighter;
+            margin-bottom: 5px;
+            position: relative;
+            color: #333;
+        }
+
+        .invoice-header h1:before {
+            content: "";
+            width: 40px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        .invoice-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .invoice-details div {
+            font-size: 14px;
+        }
+
+        .invoice-details div strong {
+            font-weight: bold;
+        }
+
+        .invoice-details-right {
+            text-align: right;
+        }
+
+        .invoice-details div span {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        table th {
+            border-bottom: 1px solid #ccc;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        table td {
+            border-bottom: 1px solid #eee;
+        }
+
+        .total-section {
+            margin-bottom: 40px;
+        }
+
+        .total-section div {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .total-section div strong {
+            font-weight: bold;
+        }
+
+        .signature {
+            text-align: right;
+        }
+
+        .signature img {
+            max-width: 150px;
+        }

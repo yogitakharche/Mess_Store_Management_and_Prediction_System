@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+.wrapper-productlist-table {
+	width: 100%;
+	height: 100%;
+}
+
+.productlist-table {
+	width: 94%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.productlist-table th, .productlist-table td {
+	padding: 1%;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 1%;
+}
+
+.productlist-table th {
+	background-color: lightgrey;
+	color: black;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.h3-text {
+	width: 100%;
+	height: 5%;
+	padding-top: 1%;
+	padding-left: 2%;
+	font-size: 1.3em;
+	position: sticky;
+	top: 0px;
+	background-color: white;
+}
+
+.productlist-table tbody tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.productlist-table tbody tr:hover {
+	background-color: #ddd;
+	transition: background-color 0.3s ease;
+}
+
+.productlist-table td a {
+	color: #f44336;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.productlist-table td a:hover {
+	color: #d32f2f;
+}
+
+.productlist-table tbody tr {
+	transition: transform 0.2s ease;
+}
+
+.productlist-table tbody tr:hover {
+	transform: scale(1.02);
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.back {
+	text-decoration: none;
+	color: #888;
+	font-size: 1rem;
+	display: inline-flex;
+	align-items: center;
+	padding: 5px 10px;
+	border: 2px solid #888;
+	border-radius: 5px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back:hover {
+	background-color: #888;
+	color: #fff;
+	transform: translateY(-3px);
+}
+
+
+
+@media (max-width: 500px) {
+    #ProdListLst {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border: none;
+         justify-content: space-evenly; 
+         
+    }
+    
+
+    #ProdListLst tbody tr {
+        display: block;
+        width: 190px; 
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        box-sizing: border-box;
+        
+    }
+
+    #ProdListLst thead {
+        display: none;
+    }
+
+    #ProdListLst tbody td {
+        display: block;
+        font-size: 14px;
+        padding: 8px 10px;
+        border: none;
+        text-align: left;
+        position: relative;
+        white-space: nowrap; 
+        overflow-y: auto;
+        overflow-x: auto;
+        scrolbar-width:thin;
+        
+    }
+
+    #ProdListLst tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        color: #888;
+        font-size: 12px;
+    }
+
+    #ProdListLst tbody td a {
+        display: inline-block;
+        padding: 8px 15px;
+        background-color: #ff4500;
+        color: #fff;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #ProdListLst tbody td a:hover {
+        background-color: #ff5722;
+    }
+
+    .back ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 1px;
+        text-align: center;
+    }
+
+    .back ul li a {
+        display: inline-block;
+        font-size: 14px;
+        color: #000;
+        padding: 10px 15px;
+        text-decoration: none;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        
+    }
+
+    .back ul li a:hover {
+        background-color: #ddd;
+    }
+
+    h1, .h3-text {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
